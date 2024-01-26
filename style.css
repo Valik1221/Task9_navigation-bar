@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+.navbar_content-wrap {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.navbar-link-vertical {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 16px 18px;
+  background-color: #f3f3f3;
+  transition: background-color 0.4s;
+}
+
+.navbar-link-horizontal {
+  display: flex;
+  color: rgb(252, 246, 246);
+  font-size: 18px;
+  padding: 16px 18px;
+  transition: background-color 0.3s;
+}
+
+.navbar-link {
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 16px 18px;
+  transition: background-color 0.3s;
+  background-color: #f3f3f3;
+}
+
+.horizontal-bg {
+  background-color: rgba(0, 0, 0, 0.767);
+  color: rgb(253, 253, 253);
+}
+
+.navbar-link-vertical:hover {
+  background-color: #54aa6e;
+  cursor: pointer;
+}
+
+.navbar-link-horizontal:hover {
+  background-color: #54aa6e;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar-item:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-link {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-link-black {
+  color: rgb(255, 255, 255);
+  background-color: #0e0d0dc2;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-link-bg {
+  color: rgb(248, 246, 246);
+}
+
+.dropdown-link:hover {
+  background-color: #ddd;
+}
+
+.dropdown-link-black:hover {
+  background-color: #0a0a0aa4;
+}
+
+.navbar-link:hover {
+  background-color: rgba(8, 92, 248, 0.63);
+  color: #f3f3f3;
+}
+
+.navbar_horizontal-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
